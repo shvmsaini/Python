@@ -1,0 +1,8 @@
+t=[]
+for row in range(len(matrix[0])):
+	t.append([])
+	for col in range(len(matrix)):
+    t[row].append(matrix[col][row])
+
+for a in range(len(t)):
+  t[a][0],t[a][2] = t[a][2],t[a][0]
