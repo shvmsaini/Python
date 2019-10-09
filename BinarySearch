@@ -1,0 +1,17 @@
+def bsearch(a,v):
+	st = 0;
+	en = len(a)-1;
+	mi = len(a)//2;
+	while (a[mi] != v & st<=en):
+		if a[mi]>v:
+			en = mi-1
+			mi = (st+en)//2
+		elif a[mi]<v:
+			st = mi+1
+			mi = (st+en)//2
+	if a[mi]==v :
+    return 1
+	else: 
+    return -1;
+
+	
