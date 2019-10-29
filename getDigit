@@ -1,0 +1,6 @@
+def getDigit(inte,t):
+	inte = str(inte)
+	inte = inte[::-1]
+	print(int(inte[t]))
+	inte = inte[::-1]
+	inte = int(inte)
