@@ -1,4 +1,7 @@
 def getDigit(inte,t):
+	inte = abs(inte)
+	if t > len(str(inte)):
+		return 'Invalid Number'
 	inte = str(inte)
 	inte = inte[::-1]
 	print(int(inte[t]))
@@ -6,4 +9,7 @@ def getDigit(inte,t):
 	inte = int(inte)
 	
 def getDigitv2(num,i):
+	num = abs(num)
+	if i > len(str(num)):
+		return 'Invalid Number'
 	return (int((num/(10**i))%10)//1)
