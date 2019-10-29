@@ -4,3 +4,6 @@ def getDigit(inte,t):
 	print(int(inte[t]))
 	inte = inte[::-1]
 	inte = int(inte)
+	
+def getDigitv2(num,i):
+	return (int((num/(10**i))%10)//1)
