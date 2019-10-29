@@ -1,0 +1,6 @@
+def mostDigit(*args):
+	args = list(args)
+	for i in args:
+		if i<0:
+			args[args.index(i)] = -args[args.index(i)]
+	return len(str(max(args)))
