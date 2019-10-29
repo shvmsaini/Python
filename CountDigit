@@ -1,0 +1,10 @@
+def CountDigit(num):
+	return len(str(abs(num)))
+
+
+
+import math
+def CountDigitv2(num):
+  if num ==0:
+    return 1;
+  return int(math.log10(num)+1)
